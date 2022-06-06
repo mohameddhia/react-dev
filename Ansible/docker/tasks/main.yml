@@ -16,4 +16,4 @@
     state: started
     recreate: true
     ports:
-      - 4201:3000
+      - 3000:3000
