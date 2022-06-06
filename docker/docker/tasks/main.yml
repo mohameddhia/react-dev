@@ -1,0 +1,19 @@
+---
+# tasks file for docker
+- name: create image docker
+  docker_image: 
+    name: devops
+    build: 
+      path: /var/lib/jenkins/workspace/react-app
+      pull: no
+    source: build 
+    state: present
+    force_source: true
+- name: run container docker
+  docker_container: 
+    name: react_app_container
+    image: devps:latest
+    state: started
+    recreate: true
+    ports:
+      - 3000:3000
