@@ -12,8 +12,8 @@
 - name: run container docker
   docker_container: 
     name: react_app_container
-    image: devps:latest
+    image: devops:latest
     state: started
     recreate: true
     ports:
-      - 3000:3000
+      - 4201:3000
