@@ -1,0 +1,5 @@
+- hosts: localhost
+  gather_facts: true
+  remote_user: dhialinux
+  roles:
+    - {role: build}
